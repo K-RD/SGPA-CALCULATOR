@@ -4,7 +4,8 @@
   "description": "A Simple SGPA (Semester Grade Point Average) Calculator to help students easily compute their semester grades based on the credits and grades of individual subjects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [
     "CGPA",
@@ -16,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1",
+    "nodemon": "^3.1.7",
     "sqlite3": "^5.1.7"
   }
 }
