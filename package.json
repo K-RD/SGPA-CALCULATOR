@@ -1,0 +1,15 @@
+{
+  "name": "sgpa-calculator",
+  "version": "1.0.0",
+  "description": "A Simple SGPA (Semester Grade Point Average) Calculator to help students easily compute their semester grades based on the credits and grades of individual subjects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["CGPA", "SGPA", "CGPA Calculator", "SGPA Calculator"],
+  "author": "ROBIND KUMAR",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
