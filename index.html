@@ -30,6 +30,7 @@
               <option value="none">none</option>
               <option value="none">lorem10</option>
             </select>
+            <button onclick="getCollege()">Get Colleges List</button>
           </div>
           <div class="branch box-inner">
             <label for="branch">Branch Name</label>
@@ -37,6 +38,7 @@
               <option value="none">none</option>
               <option value="none">lorem10</option>
             </select>
+            <button onclick="getBranch()">Get Branches List</button>
           </div>
         </div>
         <div class="box box-inner subject-table"></div>
@@ -45,4 +47,31 @@
       </div>
     </div>
   </body>
+  <script>
+    async function getCollege() {
+      const response = await fetch("/api/college");
+      const data = await response.json();
+      const college = document.getElementById("college");
+      // console.log(data);
+      data.forEach((element) => {
+        const option = document.createElement("option");
+        option.value = element.id;
+        option.text = element.name;
+        college.appendChild(option);
+      });
+    }
+
+    async function getBranch() {
+      const response = await fetch("/api/branch");
+      const data = await response.json();
+      const branch = document.getElementById("branch");
+      // console.log(data);
+      data.forEach((element) => {
+        const option = document.createElement("option");
+        option.value = element.id;
+        option.text = element.name;
+        branch.appendChild(option);
+      });
+    }
+  </script>
 </html>
