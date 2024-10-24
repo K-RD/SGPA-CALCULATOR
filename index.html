@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGPA Calculator</title>
+    <style>
+      .container,
+      .box-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box-inner,
+      .box-container {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-outer container">
+      <h1 style="text-align: center">SGPA Calculator</h1>
+      <div class="box-container">
+        <div class="box box-inner college-details">
+          <div class="college box-inner">
+            <label for="college">College Name</label>
+            <select name="college" id="college">
+              <option value="none">none</option>
+              <option value="none">lorem10</option>
+            </select>
+          </div>
+          <div class="branch box-inner">
+            <label for="branch">Branch Name</label>
+            <select name="branch" id="branch">
+              <option value="none">none</option>
+              <option value="none">lorem10</option>
+            </select>
+          </div>
+        </div>
+        <div class="box box-inner subject-table"></div>
+        <div class="box box-inner sgpa-calculation"></div>
+        <div class="box box-inner final-sgpa"></div>
+      </div>
+    </div>
+  </body>
+</html>
